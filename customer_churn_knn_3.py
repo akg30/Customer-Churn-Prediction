@@ -9,7 +9,7 @@ import numpy as np
 import streamlit as st
 import pickle as pk
 
-loaded_model=pk.load(open('C:\customer churn ml/trained_model.sav','rb'))
+loaded_model=pk.load(open('trained_model.sav','rb'))
 
 def churn_pred(input_data_churn):
     input_data_array_churn=np.asarray(input_data_churn)
